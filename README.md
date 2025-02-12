@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Web Projeto Around Auh
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+O **Web Projeto Around Auth** Este projeto implementa um sistema de registro e autorização no front-end, incluindo a criação de rotas e redirecionamento, bem como a autenticação de usuários.
 
-In the project directory, you can run:
+## Funcionalidades
 
-### `npm start`
+1. **Registro de Usuários**:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   - Permite que novos usuários se cadastrem no sistema.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Autenticação**:
 
-### `npm test`
+   Implementa login e controle de sessão para garantir acesso seguro.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Criação de Rotas**:
+   Define rotas protegidas e públicas para navegação adequada.
 
-### `npm run build`
+## Tecnologias Utilizadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React Router**: para gestão de rotas.
+- **Context API**: Gerenciamento de estado.
+- **JWT (JSON Web Tokens)**: Autenticação.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como Rodar o Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone o repositório**:
 
-### `npm run eject`
+   ```bash
+   git clone <url-do-repositorio>
+   cd web-projeto-around-auth
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Instale as dependências**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Inicie o servidor**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+4. **Teste a aplicação**:
+   Utilize ferramentas como Postman ou Insomnia para interagir com as rotas do servidor.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Exemplos de Uso
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Verificação de Token
 
-### Code Splitting
+Envie uma requisição GET para a rota protegida com o token:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```http
+GET /api/protected
+Authorization: Bearer <seu-token-jwt>
+```
 
-### Analyzing the Bundle Size
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Faça um fork do repositório.
+2. Crie uma branch com sua feature ou correção:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas alterações:
+   ```bash
+   git commit -m "Minha nova feature"
+   ```
+4. Faça um push para sua branch:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request no repositório original.
 
-### Making a Progressive Web App
+## Autor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desenvolvido por [Aysla Loureiro].
